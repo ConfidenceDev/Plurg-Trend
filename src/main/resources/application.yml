@@ -1,0 +1,8 @@
+server:
+  port: 8181
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://Node:node@node.lbg68pb.mongodb.net/?retryWrites=true&w=majority
+      database: node
