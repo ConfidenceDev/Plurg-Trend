@@ -4,7 +4,7 @@ Server for Chrome Extension to Share Trending Topics and Links among all Users
  
 # Website
 
-<a href="https://plurg-mail.onrender.com">https://plurg.me</a>
+<a href="https://plurg.me">https://plurg.me</a>
 
 # Contact
 
