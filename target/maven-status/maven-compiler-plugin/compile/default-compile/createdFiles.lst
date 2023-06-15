@@ -11,6 +11,7 @@ me/plurg/plurg/controller/TrendController.class
 me/plurg/plurg/entity/Note$NoteBuilder.class
 me/plurg/plurg/model/NoteResponse.class
 me/plurg/plurg/services/TrendServiceImpl.class
+me/plurg/plurg/controller/HomeController.class
 me/plurg/plurg/model/ErrorResponse$ErrorResponseBuilder.class
 me/plurg/plurg/entity/Note.class
 me/plurg/plurg/PlurgApplication.class
