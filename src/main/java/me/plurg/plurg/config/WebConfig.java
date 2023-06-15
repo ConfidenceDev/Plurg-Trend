@@ -17,9 +17,11 @@ public class WebConfig implements WebMvcConfigurer{
             @Override
             public void addCorsMappings(@NonNull CorsRegistry cors) {
                 cors.addMapping("/**")
-                        .allowedOrigins("https://www.plurg.me", "https://www.plurg-trend.onrender.com")
-                        .allowedMethods("GET", "POST", "PUT", "DELETE")
+                        .allowedOrigins("*")
+                        .allowedMethods("GET", "POST", "PUT")
                         .allowedHeaders("*");
+
+                //.allowedOrigins("https://www.plurg.me", "https://www.plurg-trend.onrender.com")
             }
         };
     }
