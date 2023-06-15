@@ -1,8 +1,9 @@
 server:
-  port: 8181
+  port: ${PORT:8181}
+  address: 0.0.0.0
 
 spring:
   data:
     mongodb:
-      uri: ${DB_URI}
-      database: ${DB_NAME}
+      uri: mongodb+srv://Node:node@node.lbg68pb.mongodb.net/?retryWrites=true&w=majority
+      database: node

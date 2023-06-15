@@ -6,4 +6,4 @@ COPY ${JAR_FILE} plurg.jar
 
 ENTRYPOINT ["java", "-jar", "/plurg.jar"]
 
-EXPOSE 8181
+#EXPOSE 8181

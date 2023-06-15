@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: me.plurg.plurg.PlurgApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.977 s - in me.plurg.plurg.PlurgApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.282 s - in me.plurg.plurg.PlurgApplicationTests
