@@ -43,7 +43,7 @@ public class TrendController {
 
     @GetMapping("/note")
     public ResponseEntity<Note> getNote(){
-        log.info("Fetching Note !!!!!!!!!");
+        log.info("Fetching Note");
         return new ResponseEntity<>(trendService.getNote(), HttpStatus.OK);
     }
 

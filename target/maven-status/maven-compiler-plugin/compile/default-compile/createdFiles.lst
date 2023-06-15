@@ -6,6 +6,7 @@ me/plurg/plurg/services/TrendService.class
 me/plurg/plurg/exception/NoteException.class
 me/plurg/plurg/exception/APIExceptionHandler.class
 me/plurg/plurg/model/ErrorResponse.class
+me/plurg/plurg/config/WebConfig$1.class
 me/plurg/plurg/model/NoteResponse$NoteResponseBuilder.class
 me/plurg/plurg/controller/TrendController.class
 me/plurg/plurg/entity/Note$NoteBuilder.class

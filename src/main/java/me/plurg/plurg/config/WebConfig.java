@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.*;
 @ComponentScan
 public class WebConfig implements WebMvcConfigurer{
 
-    /*@Bean
+    @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
@@ -24,7 +24,7 @@ public class WebConfig implements WebMvcConfigurer{
                 //.allowedOrigins("https://www.plurg.me", "https://www.plurg-trend.onrender.com")
             }
         };
-    }*/
+    }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
