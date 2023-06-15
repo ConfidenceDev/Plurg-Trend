@@ -2,7 +2,6 @@
 /home/confidencedev/Desktop/Github/Plurg-Trend/src/main/java/me/plurg/plurg/controller/TrendController.java
 /home/confidencedev/Desktop/Github/Plurg-Trend/src/main/java/me/plurg/plurg/services/TrendService.java
 /home/confidencedev/Desktop/Github/Plurg-Trend/src/main/java/me/plurg/plurg/exception/NoteException.java
-/home/confidencedev/Desktop/Github/Plurg-Trend/src/main/java/me/plurg/plurg/controller/HomeController.java
 /home/confidencedev/Desktop/Github/Plurg-Trend/src/main/java/me/plurg/plurg/dao/TrendDao.java
 /home/confidencedev/Desktop/Github/Plurg-Trend/src/main/java/me/plurg/plurg/exception/APIExceptionHandler.java
 /home/confidencedev/Desktop/Github/Plurg-Trend/src/main/java/me/plurg/plurg/PlurgApplication.java
