@@ -1,8 +1,6 @@
 server:
   port: ${PORT:8181}
   address: 0.0.0.0
-  ssl:
-    enabled: true
 
 spring:
   data:
