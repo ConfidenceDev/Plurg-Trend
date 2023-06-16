@@ -15,8 +15,8 @@
 	<description>Server for plurg chrome extension to share trending urls</description>
 	<properties>
 		<java.version>17</java.version>
-<!--		<maven.compiler.source>11</maven.compiler.source>-->
-<!--		<maven.compiler.target>11</maven.compiler.target>-->
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 <!--		<spring-boot.run.jvmArguments>-Djdk.tls.client.protocols=TLSv1.2</spring-boot.run.jvmArguments>-->
 	</properties>
 	<dependencies>
