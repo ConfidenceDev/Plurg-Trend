@@ -5,5 +5,5 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://Node:node@node.lbg68pb.mongodb.net/node?retryWrites=true&w=majority&authSource=admin&ssl=true
+      uri: mongodb+srv://Node:node@node.lbg68pb.mongodb.net/?retryWrites=true&w=majority&authSource=admin&ssl=true&sslInvalidHostNameAllowed=true
       database: node
