@@ -1,8 +1,11 @@
 server:
   port: ${PORT:8181}
+  address: 0.0.0.0
+  ssl:
+    enabled: true
 
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://Node:node@node.lbg68pb.mongodb.net/?retryWrites=true&w=majority&authSource=admin&ssl=true&ssl_ca_certs=cert
+      uri: mongodb+srv://Node:node@node.lbg68pb.mongodb.net/node?retryWrites=true&w=majority&authSource=admin&ssl=true
       database: node
