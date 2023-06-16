@@ -19,11 +19,6 @@ public class TrendController {
     @Autowired
     private TrendService trendService;
 
-    @GetMapping("/")
-    public String hello(){
-        return "Hello World!!!!";
-    }
-
     @GetMapping("/trends/{page}/{size}")
     public ResponseEntity<Page<Trend>> getTrend(@PathVariable int page, @PathVariable int size){
         log.info("Retrieving items");
