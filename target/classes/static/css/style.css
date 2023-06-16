@@ -246,7 +246,7 @@ img {
 .explore .mid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 40px;
+  grid-column-gap: 20px;
   padding: 4px;
   justify-self: center;
   align-self: center;
@@ -356,12 +356,12 @@ img {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding: 4px;
+  padding: 2px;
 }
 
 .showcase .items img {
   width: 100%;
-  height: 600px;
+  height: 700px;
   box-shadow: 0 1px 4px var(--dark-grey);
   border-radius: 4px;
   padding: 2px;

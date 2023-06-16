@@ -45,6 +45,11 @@
     width: 100%;
   }
 
+  .showcase .items img {
+    width: 100%;
+    height: auto;
+  }
+
   .popup {
     width: 90%;
     overflow-y: scroll;
