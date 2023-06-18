@@ -4,9 +4,9 @@ import lombok.extern.log4j.Log4j2;
 import me.plurg.plurg.entity.Note;
 import me.plurg.plurg.entity.Trend;
 import me.plurg.plurg.model.NoteResponse;
+import me.plurg.plurg.model.TrendResponse;
 import me.plurg.plurg.services.TrendService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,9 +20,9 @@ public class TrendController {
     private TrendService trendService;
 
     @GetMapping("/trends/{page}/{size}")
-    public ResponseEntity<Page<Trend>> getTrend(@PathVariable int page, @PathVariable int size){
+    public ResponseEntity<TrendResponse> getTrend(@PathVariable int page, @PathVariable int size){
         log.info("Retrieving items");
-        Page<Trend> res = trendService.getTrend(page, size);
+        TrendResponse res = trendService.getTrend(page, size);
 
         log.info("Trend fetched");
         return new ResponseEntity<>(res, HttpStatus.OK);
