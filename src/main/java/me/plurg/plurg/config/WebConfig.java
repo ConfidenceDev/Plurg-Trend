@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.*;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan
+//@ComponentScan
 public class WebConfig implements WebMvcConfigurer{
 
     @Bean

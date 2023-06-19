@@ -19,6 +19,12 @@ public class TrendController {
     @Autowired
     private TrendService trendService;
 
+    @GetMapping("/")
+    public String home(){
+        return "Welcome to Plurg Extension Server API (:";
+    }
+
+
     @GetMapping("/trends/{page}/{size}")
     public ResponseEntity<TrendResponse> getTrend(@PathVariable int page, @PathVariable int size){
         log.info("Retrieving items");
