@@ -26,7 +26,7 @@ public class WebConfig implements WebMvcConfigurer{
         };
     }
 
-    @Override
+    /*@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler(
                         "/assets/**",
@@ -38,5 +38,5 @@ public class WebConfig implements WebMvcConfigurer{
                         "classpath:/static/css/",
                         "classpath:/static/js/",
                         "classpath:/static/policy.html");
-    }
+    }*/
 }
