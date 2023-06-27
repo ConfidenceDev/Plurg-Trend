@@ -24,13 +24,12 @@ public class TrendController {
         return "Welcome to Plurg Extension Server API (:";
     }
 
-
     @GetMapping("/trends/{page}/{size}")
     public ResponseEntity<TrendResponse> getTrend(@PathVariable int page, @PathVariable int size){
-        log.info("Retrieving items");
+        //log.info("Retrieving items");
         TrendResponse res = trendService.getTrend(page, size);
 
-        log.info("Trend fetched");
+        //log.info("Trend fetched");
         return new ResponseEntity<>(res, HttpStatus.OK);
     }
 
@@ -38,13 +37,21 @@ public class TrendController {
     public ResponseEntity<HttpStatus> postTrend(@RequestBody Trend trendItem){
         trendService.postTrend(trendItem);
 
-        log.info("Trend posted");
-        return new ResponseEntity<>(HttpStatus.OK);
+        //log.info("Trend posted");
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<HttpStatus> deleteTrend(@PathVariable String id){
+        trendService.deleteTrend(id);
+
+        //log.info("Trend Deleted");
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @GetMapping("/note")
     public ResponseEntity<Note> getNote(){
-        log.info("Fetching Note");
+        //log.info("Fetching Note");
         return new ResponseEntity<>(trendService.getNote(), HttpStatus.OK);
     }
 
@@ -52,7 +59,7 @@ public class TrendController {
     public ResponseEntity<NoteResponse> postNote(@RequestBody Note note){
         NoteResponse res = trendService.postNote(note);
 
-        log.info("Noted posted");
+        //log.info("Noted posted");
         return new ResponseEntity<>(res, HttpStatus.OK);
     }
 }

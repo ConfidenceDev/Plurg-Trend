@@ -13,4 +13,6 @@ public interface TrendService {
     Note getNote();
 
     NoteResponse postNote(Note note);
+
+    void deleteTrend(String id);
 }

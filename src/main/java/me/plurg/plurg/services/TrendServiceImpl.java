@@ -39,7 +39,7 @@ public class TrendServiceImpl implements TrendService {
 
     @Override
     public TrendResponse getTrend(int page, int size) {
-        log.info("Arranging page: " + page + ", Size: " + size);
+        //log.info("Arranging page: " + page + ", Size: " + size);
         return getAll(page, size);
     }
 
@@ -72,9 +72,15 @@ public class TrendServiceImpl implements TrendService {
 
     @Override
     public void postTrend(Trend trendItem) {
-        log.info("Trend Added");
-        log.info(trendItem);
+        //log.info("Trend Added");
+        //log.info(trendItem);
         trendDao.insert(trendItem);
+    }
+
+    @Override
+    public void deleteTrend(String id) {
+        //log.info("Start Trend Delete");
+        trendDao.deleteById(id);
     }
 
     @Override
@@ -93,7 +99,7 @@ public class TrendServiceImpl implements TrendService {
         update.set("email", note.getEmail());
         update.set("utc", note.getUtc());
 
-        log.info("Updating note");
+        //log.info("Updating note");
         UpdateResult updateResult = mongoTemplate.updateFirst(query, update, Note.class);
         if (!updateResult.wasAcknowledged()) {
             throw new NoteException("Something went wrong", "BAD_REQUEST", HttpStatus.BAD_REQUEST.value());

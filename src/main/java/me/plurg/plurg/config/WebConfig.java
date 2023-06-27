@@ -16,9 +16,9 @@ public class WebConfig implements WebMvcConfigurer{
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(@NonNull CorsRegistry cors) {
-                cors.addMapping("/**")
+                cors.addMapping("/api/v1/**")
                         .allowedOrigins("*")
-                        .allowedMethods("GET", "POST", "PUT")
+                        .allowedMethods("GET", "POST", "DELETE")
                         .allowedHeaders("*");
 
                 //.allowedOrigins("https://www.plurg.me", "https://www.plurg-trend.onrender.com")

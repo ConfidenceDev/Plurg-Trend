@@ -26,6 +26,12 @@ public class Trend {
     @Field
     private String url;
     @Field
+    private String avatar;
+    @Field
+    private String username;
+    @Field
+    private String session;
+    @Field
     private String date;
     @Field
     private Instant utc;
